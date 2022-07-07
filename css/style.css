@@ -86,6 +86,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -100,20 +101,23 @@ nav,
 section {
   display: block;
 }
+
 body {
-  background-color: #eae5de;
   line-height: 1;
   font-family: "Ubuntu", sans-serif;
   font-size: 18px;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -121,6 +125,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -138,17 +143,15 @@ ul {
   padding: 0;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
+body {
+  background: url(/img/background.jpg) no-repeat;
 }
 
-.nav-list {
-  display: flex;
-  justify-content: right;
-  padding-top: 20px;
-  font-size: 15px;
+.container {
   column-gap: 20px;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .fa-phone-square:before {
@@ -161,9 +164,27 @@ ul {
 
 /* Header */
 .header {
-  max-width: 1400px;
+  max-width: 1370px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #e0dcd6;
+  border-radius: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: right;
+  row-gap: 40px;
+  padding-top: 20px;
+}
+
+.nav-list a:hover {
+  opacity: 0.6;
 }
 
 .banner {
@@ -172,6 +193,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
 }
 
 .tiile-main {
@@ -202,23 +224,40 @@ ul {
   .banner {
     flex-direction: column;
   }
+
   .banner-image img {
     padding-right: 0;
   }
+
   .nav-list {
     justify-content: center;
     row-gap: 40px;
   }
+
   .cards-row {
     display: flex;
     column-gap: 20px;
     flex-direction: column;
     align-items: center;
   }
+
   .skills {
     padding-top: 30px;
     text-align: center;
   }
+
+  .about {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .discription {
+    flex-direction: column-reverse;
+  }
+}
+
+.about {
+  padding-top: 30px;
 }
 
 .abou-list li {
@@ -262,10 +301,50 @@ ul {
 }
 
 .shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Параметры тени */
   padding: 10px;
 }
 
 .discription p {
   line-height: 1.5;
+  text-align: justify;
+}
+
+.discription {
+  display: flex;
+  column-gap: 20px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.discription img {
+  width: 250px;
+
+  border-radius: 20px;
+}
+
+.hobby-list img {
+  width: 50px;
+}
+
+.hobby {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hobby-list {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.footer {
+  height: 100px;
+}
+.social-icons a {
+  margin-right: 20px;
+}
+
+.hobby-list h3 {
+  font-size: 13px;
 }
